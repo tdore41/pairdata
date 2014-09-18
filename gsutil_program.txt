@@ -1,0 +1,3 @@
+gsutil -m cp gs://uspto-pair/applications/1210239*.zip gs://pairdata
+unzip  -jo  gs://pairdata/*.zip *-application_data.tsv -d 
+rm gs://pairdata/*.zip
